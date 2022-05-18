@@ -171,3 +171,7 @@ thresholdPubkey, error := musig2sr25519.GenerateThresholdPubkey(pubkeys, 2)
 ~~~go
 control, error := musig2sr25519.GenerateControlBlock(pubkeys, 2, pubkeyAB)
 ~~~
+
+# Notes
+
+Note that only go language calls are supported here. Due to the cross-compilation of cgo, it is not applicable to use gomobile to package into ios/andriod.
