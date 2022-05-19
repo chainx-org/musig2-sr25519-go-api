@@ -1,7 +1,9 @@
 package musig2sr25519
 
 /*
-#cgo LDFLAGS: -L../lib -lmusig2_sr25519_dll
+#cgo darwin LDFLAGS: -L../lib/mac -lmusig2_sr25519_dll
+#cgo windows LDFLAGS: -L../lib/windows -lmusig2_sr25519_dll
+#cgo linux LDFLAGS: -L../lib/linux -lmusig2_sr25519_dll
 #include <stdlib.h>
 #include "../lib/Musig2Sr25519Header.h"
 */
